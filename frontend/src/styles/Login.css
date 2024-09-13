@@ -1,0 +1,138 @@
+/* src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F9F1E7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9F1E7;
+  padding: 2rem;
+  border-radius: 10px;
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.login-header-logo img {
+  width: 150px;
+  margin-bottom: 2rem;
+}
+
+.login-form-input {
+  width: 300px;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 25px;
+  background-color: #F3E0CE;
+  font-size: 1rem;
+  color: #85586F;
+  padding-left: 3rem;
+  position: relative;
+  border: 2px solid transparent;
+}
+
+.login-form-input:focus {
+  border: 2px solid #85586F; /* Ajuste da borda no foco */
+}
+
+.input-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #85586F;
+}
+
+.login-form-input::placeholder {
+  color: #85586F;
+}
+
+.login-form-input-icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.login-form-button {
+  width: 300px;
+  padding: 0.75rem;
+  background-color: #85586F;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.login-form-button:hover {
+  background-color: #6b4556;
+}
+
+.login-form p {
+  font-size: 0.875rem;
+  color: #85586F;
+  margin-bottom: 1rem;
+}
+
+.login-form a {
+  color: #85586F;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.login-form a:hover {
+  text-decoration: underline;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.checkbox-container input {
+  margin-right: 0.5rem;
+}
+
+.checkbox-container label {
+  font-size: 0.875rem;
+  color: #85586F;
+}
+
+.login-form-title {
+  color: #85586F;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.login-form-subtext {
+  color: #C085A5;
+  font-size: 0.875rem;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  justify-content: center;
+  align-items: center;
+}

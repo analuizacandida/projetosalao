@@ -1,0 +1,67 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+main {
+    padding-top: 80px; /* Para evitar que o conteúdo fique atrás da navbar fixa */
+}
+
+.content-section {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+    margin: 1rem auto;
+    max-width: 800px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+
+.content-section img {
+    max-width: 25%; /* Reduz o tamanho das imagens para 25% */
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .content-section {
+        padding: 1rem;
+        margin: 0.5rem auto;
+    }
+
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .content-section img {
+        max-width: 50%; /* Ajusta o tamanho das imagens para 50% em telas menores */
+    }
+
+    .button {
+        padding: 0.5rem;
+    }
+}

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Glacial+Indifference&display=swap');
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #DEB6AB;
+    color: #333;
+}
+
+/* Estilo do header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    padding: 0; /* Adiciona espaçamento interno */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #85586f;
+    margin: 0 auto;
+}
+
+/* Ajuste do logo e nome */
+.logo img {
+    max-width: 70px;
+    height: auto;
+    margin-left: 40px;
+}
+
+.nome h1 {
+    font-size: 1.8rem;
+    color: #F8ECD1;
+    margin-left: 10px;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* Menu de navegação */
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap; /* Evita que os itens do menu saiam da tela em telas menores */
+    margin-right: 30px;
+    font-family: 'Glacial Indifference', sans-serif; /* Aplique a fonte aos itens do menu */
+}
+
+.menu li {
+    display: inline;
+}
+
+/* Links de navegação */
+.navbar-link {
+    text-decoration: none;
+    color: #DEB6AB; /* Cor dos itens do menu */
+    font-family: 'Glacial Indifference', sans-serif; /* Garantir que a fonte seja aplicada aos links */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar-link:hover {
+    color: #F8ECD1; /* Cor ao passar o mouse */
+}
+
+/* Ajustes de responsividade */
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .nome h1 {
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-link {
+        font-size: 1rem;
+    }
+}
